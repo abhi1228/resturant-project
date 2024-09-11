@@ -1,0 +1,236 @@
+body{
+    background-color: rgb(236, 228, 228);
+    font-family: Arial, sans-serif;
+}
+.navbar{
+   justify-content: start;
+    
+    
+    background-color: black;
+}
+.nav-title{
+    color: orange;
+    font-size: 25px;
+    padding: 5px;
+    font-weight: 700;
+}
+#search-input{
+    width: 62rem;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    
+}
+
+.nav-item{
+    background-color: gray;
+    margin-left: 2px;
+    flex-grow: 4;
+    
+}
+.nav-item :hover {
+    background-color: rgb(231, 145, 15);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.menu{
+    color: black;
+}
+.menu:hover{
+    color: white;
+}
+
+/*hamburger icon*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+.video-banner {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    max-height: 500px; /* Set a max height for the video */
+    overflow: hidden;
+}
+
+.video-banner video {
+    border-radius: 10px;
+    width: 80%; /* Full width video */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover entire space */
+}
+.card{
+    margin:50px;
+}
+
+.menu-container{
+   display: flex;
+   flex-wrap: wrap; 
+}
+.menu-item{
+    width: 33%;
+
+}
+
+.card-img-top{
+    height: 350px;
+}
+.card-title{
+    color: darkgreen;
+    font-size: x-large;
+}
+.card-text{
+    color: rgb(233, 133, 102);
+    font-size: larger;
+}
+.text-muted{
+    color:rgb(131, 46, 46);
+}
+.nav-links {
+    display: none;
+}
+@media (max-width: 1326px) {
+    .navbar{
+        justify-content: space-between;
+         
+         
+         background-color: black;
+     }
+    #search-input {
+        width: 27rem;
+    }
+    .nav-links {
+        display: none;
+    }
+}
+/*tab view*/
+@media (max-width: 1085px) {
+    .mobile-search{
+        display: block;
+        margin: 4px;
+    }
+    .navbar{
+        justify-content: space-between;
+         
+         
+         background-color: black;
+     }
+    #search-input{
+        display: none;
+         
+     }
+     .nav-pills{
+        display: none;
+         
+     }
+     .nav-links {
+        display: none; /* Hide nav links by default */
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #000000;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        z-index: 99;
+    }
+
+    .nav-links li {
+        margin: 10px 5px;
+        list-style-type: none;
+        color: white;
+        
+    }
+    .nav-item :hover {
+       cursor: pointer;
+        
+    }
+    .nav-links.active {
+        display: flex; /* Show the nav links when active */
+    }
+     .hamburger{
+        display: flex;
+     }
+     .menu-item{
+        width: 50%;
+    
+    }
+    .card{
+        margin:20px;
+    }
+    .card-img-top{
+        height: 350px;
+    }
+    
+}
+
+@media (max-width: 636px) {
+    .mobile-search{
+        display: block;
+        margin: 4px;
+    }
+    .navbar{
+        justify-content: space-between;
+         
+         
+         background-color: black;
+     }
+    #search-input{
+        display: none;
+         
+     }
+     .nav-pills{
+        display: none;
+         
+     }
+     .nav-links {
+        display: none; /* Hide nav links by default */
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #000000;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        z-index: 99;
+    }
+
+    .nav-links li {
+        margin: 10px 5px;
+        list-style-type: none;
+        color: white;
+        
+    }
+    .nav-item :hover {
+       cursor: pointer;
+        
+    }
+    .nav-links.active {
+        display: flex; /* Show the nav links when active */
+    }
+     .hamburger{
+        display: flex;
+     }
+     .menu-item{
+        width: 100%;
+    
+    }
+    .card{
+        margin:20px;
+    }
+    .card-img-top{
+        height: 350px;
+    }
+}
+
